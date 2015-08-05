@@ -1,3 +1,5 @@
+var code = require('../js/main.js');
+
 describe("RockPaperScissors", function() {
 
   var player1 = null;
@@ -5,9 +7,9 @@ describe("RockPaperScissors", function() {
   var game = null;
 
   beforeEach(function() {
-    player1 = new Player('Michael');
-    player2 = new Player('Johnny');
-    game = new Game(player1, player2);
+    player1 = new code.Player('Michael');
+    player2 = new code.Player('Johnny');
+    game = new code.Game(player1, player2);
   });
 
   describe('winning and losing', function() {
